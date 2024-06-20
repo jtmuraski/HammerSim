@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace HammerSimAPI.Models.Enums
 {
-    internal class SubFactions
+    public enum SubFactions
     {
+        None,
+        Ulatrmarines,
+        Dark_Angels,
+        Space_Wolves,
+        Blood_Angels,
+        Deathwatch,
+        Grey_Knights,
+        Cadian
     }
 }

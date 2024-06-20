@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace HammerSimAPI.Models.Enums
 {
-    internal class MainFactions
+    public enum  MainFactions
     {
+        Space_Marines,
+        Astra_Militarum,
+        Orks,
+        Necrons,
+        Tau,
+        Tyranids,
+        Chaos,
+        Eldar,
+        Dark_Eldar,
+        Adeptus_Mechanicus,
+        Adeptus_Custodes,
+        Imperial_Knights,
+        Chaos_Knights,
+        Adepta_Sororitas
     }
 }

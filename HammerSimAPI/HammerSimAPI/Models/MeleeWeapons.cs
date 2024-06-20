@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HammerSimAPI.Models
 {
-    internal class MeleeWeapons
+    public class MeleeWeapons
     {
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HammerSimAPI.Models
 {
-    internal class Wargear
+    public class Wargear
     {
     }
 }

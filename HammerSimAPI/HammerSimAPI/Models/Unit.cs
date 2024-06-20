@@ -14,8 +14,8 @@ namespace HammerSimAPI.Models
     {
         // ---Properties---
         public string Name { get; set; }
-        public string Faction { get; set; }
-        public string SubFaction { get; set; }
+        public MainFactions Faction { get; set; }
+        public SubFactions SubFaction { get; set; }
         public int ModelCount { get; set; } 
         public int Movement { get; set; }
         public int Toughness { get; set; }
@@ -35,6 +35,7 @@ namespace HammerSimAPI.Models
             MeleeWeapons = new List<MeleeWeapons>();
             Wargear = new List<Wargear>();
             UnitKeywords = new List<UnitKeywords>();
+            Name = string.Empty;
         }
     }
 }
