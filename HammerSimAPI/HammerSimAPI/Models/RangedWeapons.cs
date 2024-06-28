@@ -13,7 +13,7 @@ namespace HammerSimAPI.Models
     public class RangedWeapons
     {
         // ---Properties---
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public int Range { get; set; }
         public int Attacks { get; set; }
         public int WeaponSkill { get; set; }
