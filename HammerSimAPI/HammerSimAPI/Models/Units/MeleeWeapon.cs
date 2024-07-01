@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HammerSimAPI.Models
+namespace HammerSimAPI.Models.Units
 {
-    public class Wargear
+    public class MeleeWeapon
     {
     }
 }

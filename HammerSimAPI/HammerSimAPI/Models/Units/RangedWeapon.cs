@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HammerSimAPI.Models
+namespace HammerSimAPI.Models.Units
 {
     /// <summary>
     /// Data for a given Ranged Weapon. Each Range Weapon is unique to the unit it is assigned to.
     /// </summary>
-    public class RangedWeapons
+    public class RangedWeapon
     {
         // ---Properties---
         public string? Name { get; set; }
@@ -22,7 +22,7 @@ namespace HammerSimAPI.Models
         public int Damage { get; set; }
         public List<RangedWeaponKeywords> WeaponKeywords { get; set; } = new List<RangedWeaponKeywords>();
 
-        public RangedWeapons()
+        public RangedWeapon()
         {
             WeaponKeywords = new List<RangedWeaponKeywords>();
         }
