@@ -17,6 +17,7 @@ namespace HammerSimAPI.Models.Data
         public int DefendingModelsKilled { get; set; }
         public List<RangedWeaponResult> IndividualWeaponResults { get; set;}
         public List<RangedWeapon> OutOfRangeWeapons { get; set; }
+        public Dictionary<int, int> AttackDiceDistribution { get; set; }
 
         public ShootingResults()
         {
@@ -27,6 +28,15 @@ namespace HammerSimAPI.Models.Data
             TotalWounds = 0;
             TotalSaves = 0;
             DefendingModelsKilled = 0;
+            AttackDiceDistribution = new Dictionary<int, int>()
+            {
+                {1, 0},
+                {2, 0},
+                {3, 0},
+                {4, 0},
+                {5, 0},
+                {6, 0}
+            };
         }
     }
 }

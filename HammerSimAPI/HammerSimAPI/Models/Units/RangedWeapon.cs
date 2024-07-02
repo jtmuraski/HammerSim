@@ -15,6 +15,7 @@ namespace HammerSimAPI.Models.Units
         // ---Properties---
         public string? Name { get; set; }
         public int Range { get; set; }
+        public int NumOfWeapons { get; set; }
         public int Attacks { get; set; }
         public int WeaponSkill { get; set; }
         public int Strength { get; set; }

@@ -26,7 +26,7 @@ namespace HammerSimAPI.Services
                 RangedWeaponResult result = new RangedWeaponResult();
                 if(weapon.Range >= range)
                 {
-                    result.Hits = RollAttacks(attacker, weapon, defender);
+                    result.Hits = RollAttacks(attacker, defender, weapon, results);
                     int tempWounds = RollForWounds(attacker, weapon, defender, result.Hits);
                     result.Saves = RollSaves(attacker, weapon, defender, result.Hits);
                     result.Wounds = tempWounds - result.Saves;
@@ -40,6 +40,33 @@ namespace HammerSimAPI.Services
             }
 
             return results;
+        }
+
+        private static int RollAttacks(Unit attacker, Unit defender, RangedWeapon weapon, int modifier, ShootingResults results)
+        {
+            int numOfAttacks = weapon.Attacks * weapon.NumOfWeapons;
+            int hits = 0;
+            int misses = 0;
+            int currentRoll = 0;
+
+            for(int i = 0; i < numOfAttacks; i++)
+            {
+                currentRoll = RollD6();
+
+                if (currentRoll == 1)
+                    misses++;
+                else if (currentRoll == 6)
+                    hits++;
+                else if (currentRoll + modifier >= weapon.WeaponSkill)
+                    hits++;
+                else
+                    misses++;
+
+                results.AttackDiceDistribution[currentRoll] = results.AttackDiceDistribution[currentRoll] + 1;
+            }
+
+            results.TotalShotsFired += numOfAttacks;
+            return hits;
         }
     }
 }
