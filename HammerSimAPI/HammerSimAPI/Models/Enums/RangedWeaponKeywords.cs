@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace HammerSimAPI.Models.Enums
 {
-    public class RangedWeaponKeywords
+    public enum RangedWeaponKeywords
     {
-
+        Rapid_Fire,
+        Assault
     }
 }

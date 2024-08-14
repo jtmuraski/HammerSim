@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace HammerSimAPI.Models.Units
 {
-    internal class Keywords
+    public enum Keywords
     {
+        None
     }
 }

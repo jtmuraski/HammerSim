@@ -8,5 +8,7 @@ namespace HammerSimAPI.Models.Units
 {
     public class Wargear
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }

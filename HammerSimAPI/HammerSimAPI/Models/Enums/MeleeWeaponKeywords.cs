@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace HammerSimAPI.Models.Enums
 {
-    public class MeleeWeaponKeywords
+    public enum MeleeWeaponKeywords
     {
+        None
     }
 }

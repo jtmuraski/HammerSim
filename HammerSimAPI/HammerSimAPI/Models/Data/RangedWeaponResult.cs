@@ -10,6 +10,7 @@ namespace HammerSimAPI.Models.Data
     public class RangedWeaponResult
     {
         // ---Propeties---
+        public int Id { get; set; }
         public RangedWeapon Weapon { get; set; }
         public int ShotsFired { get; set; }
         public int Hits { get; set; }

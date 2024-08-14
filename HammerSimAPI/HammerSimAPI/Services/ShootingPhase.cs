@@ -21,6 +21,10 @@ namespace HammerSimAPI.Services
         public static ShootingResults ResolveShootingPhase(Unit attacker, Unit defender, int range)
         {
             ShootingResults results = new ShootingResults();
+            if(attacker.RangedWeapons is null || attacker.RangedWeapons.Count == 0)
+            {
+                return results;
+            }
 
             foreach(var weapon in attacker.RangedWeapons)
             {
@@ -28,7 +32,7 @@ namespace HammerSimAPI.Services
                 if(weapon.Range >= range)
                 {
                     int modifier = 0;
-                    result.Hits = RollAttacks(attacker, defender, weapon, modifier, results);
+                    result.Hits = RollAttacks(attacker, defender, weapon, modifier);
 
                     int tempWounds = RollForWounds(attacker, weapon, defender, result.Hits);
 
@@ -49,7 +53,7 @@ namespace HammerSimAPI.Services
             return results;
         }
 
-        private static int RollAttacks(Unit attacker, Unit defender, RangedWeapon weapon, int modifier, ShootingResults results)
+        private static int RollAttacks(Unit attacker, Unit defender, RangedWeapon weapon, int modifier)
         {
             int numOfAttacks = weapon.Attacks * weapon.NumOfWeapons;
             int hits = 0;
@@ -68,11 +72,8 @@ namespace HammerSimAPI.Services
                     hits++;
                 else
                     misses++;
-
-                results.AttackDiceDistribution[currentRoll] = results.AttackDiceDistribution[currentRoll] + 1;
             }
 
-            results.TotalShotsFired += numOfAttacks;
             return hits;
         }
 

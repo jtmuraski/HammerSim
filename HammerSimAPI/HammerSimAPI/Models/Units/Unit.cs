@@ -13,6 +13,7 @@ namespace HammerSimAPI.Models.Units
     public class Unit
     {
         // ---Properties---
+        public int Id { get; set; }
         public string Name { get; set; }
         public MainFactions Faction { get; set; }
         public SubFactions SubFaction { get; set; }
