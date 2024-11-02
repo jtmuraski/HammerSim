@@ -118,11 +118,11 @@ namespace HammerSimAPI.Services
                     int saveValue = 0;
                     if(defender.InvulnerableSave > 0)
                     {
-                        saveValue = defender.InvulnerableSave < defender.Save ? defender.InvulnerableSave : defender.Save;
+                        saveValue = defender.InvulnerableSave < defender.ArmorSave ? defender.InvulnerableSave : defender.ArmorSave;
                     }
                     else
                     {
-                        saveValue = defender.Save;
+                        saveValue = defender.ArmorSave;
                     }
 
                     if (modifiedRoll >= saveValue)

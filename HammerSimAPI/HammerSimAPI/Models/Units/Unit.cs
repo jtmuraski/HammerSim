@@ -20,7 +20,7 @@ namespace HammerSimAPI.Models.Units
         public int ModelCount { get; set; }
         public int Movement { get; set; }
         public int Toughness { get; set; }
-        public int Save { get; set; }
+        public int ArmorSave { get; set; }
         public int InvulnerableSave { get; set; }
         public int Wounds { get; set; }
         public int Leasership { get; set; }

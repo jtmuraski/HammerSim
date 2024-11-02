@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddUnit", "AddUnit\AddUnit.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AwsLamdas", "AwsLamdas", "{04200F69-9D82-4A09-9D86-0CB3944C24E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HammerSimApp", "HammerSimApp\HammerSimApp.csproj", "{BE292907-B52E-4D35-B6E5-CB7A3C26703D}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "HammerDb", "HammerDb\HammerDb.sqlproj", "{37A9D6CB-D6C9-4157-8E3A-4926BE5F6419}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,12 @@ Global
 		{668EEB00-088C-414A-864E-84C7D92FABA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{668EEB00-088C-414A-864E-84C7D92FABA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{668EEB00-088C-414A-864E-84C7D92FABA8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BE292907-B52E-4D35-B6E5-CB7A3C26703D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BE292907-B52E-4D35-B6E5-CB7A3C26703D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BE292907-B52E-4D35-B6E5-CB7A3C26703D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BE292907-B52E-4D35-B6E5-CB7A3C26703D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37A9D6CB-D6C9-4157-8E3A-4926BE5F6419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37A9D6CB-D6C9-4157-8E3A-4926BE5F6419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37A9D6CB-D6C9-4157-8E3A-4926BE5F6419}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{37A9D6CB-D6C9-4157-8E3A-4926BE5F6419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37A9D6CB-D6C9-4157-8E3A-4926BE5F6419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37A9D6CB-D6C9-4157-8E3A-4926BE5F6419}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
