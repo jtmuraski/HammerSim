@@ -18,4 +18,25 @@ AS
 	INSERT INTO Units (Name, Faction, SubFaction, ModelCount, Movement, Toughness, ArmorSave, InvulnerableSave, Wounds, Leadership, ObjectiveControl)
 				VALUES (@name, @faction, @subFaction, @modelCount, @movement, @toughness, @armorsave, @invulnerableSave, @wounds, @leadership, @objectiveControl);
 
-	SELECT SCOPE_IDENTITY() AS Id;
+DECLARE @UnitId INT = SCOPE_IDENTITY();
+
+-- INSERT the units ranged weapons
+INSERT INTO RangedWeapons (UnitId, 
+						   Name, 
+						   Range,
+						   NumOfWeapons,
+						   Attacks,
+						   WeaponSkill,
+						   Strength,
+						   AP,
+						   Damage)
+			SELECT @UnitId,
+			        Name,
+					Range,
+					NumOfWeapons,
+					Attacks,
+					WeaponSKill,
+					Strength,
+					AP,
+					Damage FROM @RangedWeapons;
+
