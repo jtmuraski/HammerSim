@@ -1,0 +1,18 @@
+﻿@page "/Action/AddUnit"
+@rendermode InteractiveAuto
+@inject IUnitActions unitActions
+
+<h3>Add new Unit</h3>
+
+
+
+@code {
+    private Unit unit = new Unit();
+    private string? successMessage = string.Empty;
+
+    private async Task SaveUnit()
+    {
+        await unitActions.AddUnit(unit);
+        successMessage = $"{unit.Name} has been successfully saved!";
+    }
+}

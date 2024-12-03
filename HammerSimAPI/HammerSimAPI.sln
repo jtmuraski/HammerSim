@@ -5,11 +5,11 @@ VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HammerSimAPI", "HammerSimAPI\HammerSimAPI.csproj", "{57B4BA5F-87D1-4431-9B31-72C88423859E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddUnit", "AddUnit\AddUnit.csproj", "{668EEB00-088C-414A-864E-84C7D92FABA8}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AwsLamdas", "AwsLamdas", "{04200F69-9D82-4A09-9D86-0CB3944C24E9}"
-EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "HammerDb", "HammerDb\HammerDb.sqlproj", "{37A9D6CB-D6C9-4157-8E3A-4926BE5F6419}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HammerSimApp", "HammerSimApp\HammerSimApp\HammerSimApp.csproj", "{DA138661-3C06-4DAE-9CBA-D9F7F4CA9982}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HammerSimApp.Client", "HammerSimApp\HammerSimApp.Client\HammerSimApp.Client.csproj", "{20D4EB5D-D560-429B-9BF7-BEBD6CE0DCEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,22 +21,23 @@ Global
 		{57B4BA5F-87D1-4431-9B31-72C88423859E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57B4BA5F-87D1-4431-9B31-72C88423859E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57B4BA5F-87D1-4431-9B31-72C88423859E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{668EEB00-088C-414A-864E-84C7D92FABA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{668EEB00-088C-414A-864E-84C7D92FABA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{668EEB00-088C-414A-864E-84C7D92FABA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{668EEB00-088C-414A-864E-84C7D92FABA8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{37A9D6CB-D6C9-4157-8E3A-4926BE5F6419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{37A9D6CB-D6C9-4157-8E3A-4926BE5F6419}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37A9D6CB-D6C9-4157-8E3A-4926BE5F6419}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{37A9D6CB-D6C9-4157-8E3A-4926BE5F6419}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37A9D6CB-D6C9-4157-8E3A-4926BE5F6419}.Release|Any CPU.Build.0 = Release|Any CPU
 		{37A9D6CB-D6C9-4157-8E3A-4926BE5F6419}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DA138661-3C06-4DAE-9CBA-D9F7F4CA9982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA138661-3C06-4DAE-9CBA-D9F7F4CA9982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA138661-3C06-4DAE-9CBA-D9F7F4CA9982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA138661-3C06-4DAE-9CBA-D9F7F4CA9982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20D4EB5D-D560-429B-9BF7-BEBD6CE0DCEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20D4EB5D-D560-429B-9BF7-BEBD6CE0DCEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20D4EB5D-D560-429B-9BF7-BEBD6CE0DCEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20D4EB5D-D560-429B-9BF7-BEBD6CE0DCEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{668EEB00-088C-414A-864E-84C7D92FABA8} = {04200F69-9D82-4A09-9D86-0CB3944C24E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8AF8B81A-6309-44ED-B70A-FC08DC89AD2A}

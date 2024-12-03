@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{37a9d6cb-d6c9-4157-8e3a-4926be5f6419}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -67,5 +67,8 @@
     <Build Include="Tables\MeleeWeapons.sql" />
     <Build Include="StoredProcedures\UnitSps\SpCreateNewUnit.sql" />
     <Build Include="Tables\TableTypes\RangedWeaponType.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HammerDb.publish.xml" />
   </ItemGroup>
 </Project>
